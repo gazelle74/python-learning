@@ -1,7 +1,6 @@
 ############################################
-# A 30 Minute Python Crash Course
-#
-# Brief high level overview of python:
+# A 45 Minute Hands-On Python Crash Course
+# What to expect:
 # -- Intro to variables, data types, and IDEs
 # -- print() function
 # -- operators
@@ -11,6 +10,7 @@
 # -- iteration
 # -- classes and OOP
 # -- data structures
+# -- scripting in python
 #
 # 3 SIMPLE GOALS
 # ----------------
