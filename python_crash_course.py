@@ -39,6 +39,7 @@ b = 1.598
 c = .1987
 d = 100.579
 
+
 # print()
 # ---------------------------------------------------------------
 # the print() function in python3.0 displays output to the console
@@ -47,6 +48,7 @@ print(a)
 print(b)
 print(c)
 print(d)
+
 
 # How to run a python file
 # In PyCharm click Run -> Run -> Name of the file
@@ -220,18 +222,52 @@ print('12th fib number = {}'.format(next))
 
 # creating functions
 # a functions maps a set of inputs to outputs.
+# You can create your own using the 'def' keyword in python
 
 def scale_number(num, amount):
     return num * amount
 
 print(scale_number(10, 5))
 
+# keyword arguments
+
+
+def area_triangle(height=11, width=7.5):
+    return 1/2 * (height * width)
+
+
+print(area_triangle())
+print(area_triangle(height=20, width=100))
+
+# can accept an arbitrary number of input
+
+
+def multiply(*args, y=1):
+
+    for x in range(len(args)):
+        y *= args[x]
+    return y
+
+print('multiply=', multiply(1, 2, 3, 4))
+
+print()
+
+def key_value(**kwargs):
+    for key, value in kwargs.items():
+        print('{} {}'.format(key, value))
+
+key_value(a=5, b=10, c=15)
+
+
+
 
 # classes and objects
 # classes are used to model real world objects 
 
 class Point:
-    """simple class in python."""
+    """Simple class in python. This is an example
+    of a docstring, or a string that's used like a
+    comment to document a segment of code."""
 
     def __init__(self, x, y):
         self.x = x
